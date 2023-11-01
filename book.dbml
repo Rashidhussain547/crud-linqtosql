@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="LibraryMangSystem" Class="bookDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=RASHID-DESKTOP\SQLEXPRESS01;Initial Catalog=LibraryMangSystem;Integrated Security=True" SettingsObjectName="crudlinqtosql.Properties.Settings" SettingsPropertyName="LibraryMangSystemConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Books" Member="Books">
+    <Type Name="Book">
+      <Column Name="BookId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TITLE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="AUTHOR" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ISBN" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="GENRE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
